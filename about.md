@@ -11,7 +11,7 @@ I'm Nami WANG, a developer who writes different kinds of codes. You can find me 
 ## fiber note
 
 <a href="https://github.com/namiwang/fiber-note" target="_blank">
-  <img src="/assets/images/fiber-note.gif" width="480" height="372" alt="fiber note screenshot">
+  <img src="/assets/images/fiber-note.gif" width="480" alt="fiber note screenshot">
 </a>
 
 [fiber-note](https://github.com/namiwang/fiber-note) is a bi-directional networked note-taking app which is open and self-hosting, inspired by `roam-research`, `obsidian` and others.
