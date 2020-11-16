@@ -18,26 +18,71 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: 「代碼指南」編輯部
+author:
+  name: Nami WANG
+  email: nami.m.wang@gmail.com
+# description: > # this means to ignore newlines until "show_excerpts:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+description: 西交民巷 50 号
+show_excerpts: true # set to true to show excerpts on the homepage
+# excerpt_separator: <!--more-->
 
-remote_theme: chesterhow/tale
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
 
-permalink:    /:year-:month-:day/:title
-paginate:     5
+  # generate social links in footer
+  social_links:
+    twitter: nami_m_wang
+    github: namiwang
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+- about.md
+
+# Build settings
+# theme: minima
+remote_theme: jekyll/minima
 
 plugins:
-  # - jekyll-feed
-  - jekyll-paginate
-  - jekyll-remote-theme
+- jekyll-remote-theme
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-image-size
 
 # Exclude from processing.
 # The following items will not be processed, by default.
