@@ -67,7 +67,7 @@ To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap`
 
 - I publish some of my novels at 围炉（[weilu.community](https://weilu.community)）
 
-# communities
+<!-- # communities
 
 - ingress enlighten lv.10
-- help organized wikipedia offline events in shanghai
+- help organized wikipedia offline events in shanghai -->
