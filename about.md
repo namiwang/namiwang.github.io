@@ -11,7 +11,7 @@ I'm Nami WANG, a developer who writes different kinds of codes. You can find me 
 ## fiber note
 
 <a href="https://github.com/namiwang/fiber-note" target="_blank">
-  {% imagesize /assets/images/fiber-note.gif:img?width=480 alt="fiber note screenshot" %}
+  <img src="/assets/images/fiber-note.gif" width="480" height="372" alt="fiber note screenshot">
 </a>
 
 [fiber-note](https://github.com/namiwang/fiber-note) is a bi-directional networked note-taking app which is open and self-hosting, inspired by `roam-research`, `obsidian` and others.
@@ -19,7 +19,7 @@ I'm Nami WANG, a developer who writes different kinds of codes. You can find me 
 ## references.wiki
 
 <a href="https://references.wiki" target="_blank">
-  {% imagesize /assets/images/ref-wiki.png:img?width=480 alt="fiber note screenshot" %}
+  <img src="/assets/images/ref-wiki.png" width=480 alt="references.wiki screenshot">
 </a>
 
 I watched so many tv shows (especially sitcoms) that I have to build [references.wiki](https://references.wiki) to organize and visualize pop culture references between tv shows, video games, ficional characters, etc.
@@ -38,9 +38,9 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 ## project yoru
 
-{% imagesize /assets/images/project-yoru-1.png:img?width=480 alt="fiber note screenshot" %}
+ <img src="/assets/images/project-yoru-1.png" width=480 alt="project yoru screenshot">
 
-{% imagesize /assets/images/project-yoru-2.png:img?width=480 alt="fiber note screenshot" %}
+ <img src="/assets/images/project-yoru-2.png" width=480 alt="project yoru screenshot">
 
 [Project yoru](https://github.com/project-yoru) is a set of projects to build cross-platform visual novel games from assets and scripts.
 

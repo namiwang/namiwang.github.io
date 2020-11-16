@@ -82,7 +82,7 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-paginate
-- jekyll-image-size
+# - jekyll-image-size
 
 # Exclude from processing.
 # The following items will not be processed, by default.
