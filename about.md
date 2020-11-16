@@ -38,9 +38,9 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 ## project yoru
 
- <img src="/assets/images/project-yoru-1.png" width=480 alt="project yoru screenshot">
+<img src="/assets/images/project-yoru-1.png" width=480 alt="project yoru screenshot">
 
- <img src="/assets/images/project-yoru-2.png" width=480 alt="project yoru screenshot">
+<img src="/assets/images/project-yoru-2.png" width=480 alt="project yoru screenshot">
 
 [Project yoru](https://github.com/project-yoru) is a set of projects to build cross-platform visual novel games from assets and scripts.
 
