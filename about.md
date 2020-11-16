@@ -44,7 +44,7 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 [Project yoru](https://github.com/project-yoru) is a set of projects to build cross-platform visual novel games from assets and scripts.
 
-To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap` (and phonegap build), which is all (basically) died by now \:\|
+To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap build`, which are all (basically) dead by now \:\|
 
 # tiny projects
 
