@@ -75,9 +75,10 @@ header_pages:
 
 # Build settings
 # theme: minima
-remote_theme: jekyll/minima
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
+- jekyll-include-cache
 - jekyll-remote-theme
 - jekyll-feed
 - jekyll-seo-tag
