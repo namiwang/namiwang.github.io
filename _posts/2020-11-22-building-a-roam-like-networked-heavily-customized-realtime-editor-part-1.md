@@ -81,7 +81,8 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
 
 ## requirements
 
-* restrict the doc to a special set of content types (like list, list item, inline tags)
+* restrict the doc to a special set of content types
+    * e.g. allow list, list item, and inline tags; disallow individual paragraphs or images
 * render existing data into the editor
 * inspect and manipulate input from the user
     * enforce a limitation on what type of contents may input (list item, paragraph, inline span, etc.)
