@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Globals in Polymer"
 excerpt: Polymer 中 element（component）主宰一切。一個自然的需求是，在 element 間進行通訊與數據共享。
 date: 2014-12-18 16:56:04 +0800

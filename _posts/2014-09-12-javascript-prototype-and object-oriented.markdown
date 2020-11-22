@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Javascript: Prototype and Object-oriented"
 excerpt: 由若干 key-value pairs 組成的結構，在 Ruby 裏稱 `Hash`，在 Python 裏稱爲 `Map`，在 Javascript 中叫做 `Object`。
 date: 2014-09-12 23:25

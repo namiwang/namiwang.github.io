@@ -1,0 +1,14 @@
+Nami WANG:
+  name: Nami WANG
+  bio: indie developer
+  # avatar: "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "nami.m.wang@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:nami.m.wang@gmail.com"
+    - label: "@nami_m_wang"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/nami_m_wang"
+    - label: "@namiwang"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/namiwang"

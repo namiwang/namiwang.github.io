@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: building a roam-like, networked, heavily-customized realtime editor, part 1
 excerpt: I can build this. &mdash; every developer at least once
 date: 2020-11-12 20:21:42 +0800

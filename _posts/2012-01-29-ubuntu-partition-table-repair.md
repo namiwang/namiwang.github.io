@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 为什么不应该贸然升级 ubuntu 和 gnome，和分区表修复经验
 excerpt: 不论它看起来多美，不要贸然升级。
 date: 2011-05-29 22:43
