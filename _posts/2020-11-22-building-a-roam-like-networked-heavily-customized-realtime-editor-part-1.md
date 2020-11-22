@@ -27,7 +27,6 @@ I record my building of `fiber-note` in this series of dev posts, what I want to
 * a highly-customized editor
     * enforce a custom schema to control the layout of the documents
         * say everything is a list item, there may be only text and tags in paragraph, etc.
-        * hijack and mutate user’s input actions
     * handle meta data like tags, assigning unique ids for the block
     * complex UI like inline drop-down menu
     * …
