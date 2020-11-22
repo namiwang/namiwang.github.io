@@ -143,4 +143,4 @@ You’ll spend a lot of time jumping between the [guides](https://prosemirror.ne
 
 # next chapter
 
-Thanks for reading. In the next chapter, I'll discuss how I built and tweaked the editor.
+Thanks for reading. In the next post, I'll discuss how I built and tweaked the editor.
