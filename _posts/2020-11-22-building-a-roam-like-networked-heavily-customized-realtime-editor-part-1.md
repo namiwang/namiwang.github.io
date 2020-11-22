@@ -85,7 +85,7 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
     * e.g. allow list, list item, and inline tags; disallow individual paragraphs or images
 * render existing data into the editor
 * inspect and manipulate input from the user
-    * enforce a limitation on what type of contents may input (list item, paragraph, inline span, etc.)
+    * enforce input rules like properly wrapping/indenting list items
     * assign unique ids to created blocks
 * implement drop-down menu to auto-complete tags
 * send updated content to the server
