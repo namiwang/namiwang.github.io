@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: single
 title: About & Projects
 permalink: /about/
 ---
 
-I'm Nami WANG, a developer who writes different kinds of codes. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) at twitter and [@namiwang](https://github.com/namiwang) at github.
+I'm a developer who writes different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
 
 # major side-projects
 
@@ -22,9 +22,9 @@ I'm Nami WANG, a developer who writes different kinds of codes. You can find me 
   <img src="/assets/images/ref-wiki.png" width=480 alt="references.wiki screenshot">
 </a>
 
-I watched so many tv shows (especially sitcoms) that I have to build [references.wiki](https://references.wiki) to organize and visualize pop culture references between tv shows, video games, ficional characters, etc.
+I watched so many tv shows (especially sitcoms) that I have to build [references.wiki](https://references.wiki) to organize and visualize pop culture references between tv shows, video games, fictional characters, etc.
 
-I built my own knowledge base to cross-reference sources like wikidata, google kg,  and wolfram alpha. I implemented a customized editor for user to create new references between works, still not satisfied with current workflow though.
+I built my own knowledge base to cross-reference sources like wikidata, google kg,  and wolfram alpha. I implemented a customized editor for user to create new references between works, still not satisfied with the current workflow though.
 
 ## ruby on rust
 
@@ -32,9 +32,9 @@ I built my own knowledge base to cross-reference sources like wikidata, google k
 
 An implementation of ruby in pure rust, consists of (barely working) lexer and parser, and a no-go interpreter.
 
-I started this project as a way to learn rust. Eventually, I've learnt more than that, including lexer & parser, `ragel`, and a lot of ruby's hidden magic.
+I started this project as a way to learn rust. Eventually, I've learned more than that, including lexer & parser, `ragel`, and a lot of ruby's hidden magic.
 
-Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapated some rules from `parser` and ported from ragel-6 to ragel-7 For parser, I use `syntax-cli` as parser generator.
+Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapted some rules from `parser` and ported from ragel-6 to ragel-7 For parser, I use `syntax-cli` as the parser generator.
 
 ## project yoru
 
