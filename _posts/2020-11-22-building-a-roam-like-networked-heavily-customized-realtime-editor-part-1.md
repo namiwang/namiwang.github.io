@@ -71,7 +71,7 @@ There’re some edge cases to consider
 
 ## a data structure on disk
 
-Apparently we need to maintain a graph, yet I’m didn’t choose a graph-oriented database like `neo4j`. Using good old SQL to simulate a graph is good enough for now.
+Apparently we need to maintain a graph, yet I didn’t choose a graph-oriented database like `neo4j`. Using good old SQL to simulate one is good enough for now.
 
 There’re both plugins to do graph on database level (namely [AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and rails level (like [edge](https://github.com/jackc/edge)). For the initial implementation, I chose to hand-written everything from ground for faster iteration because I was constantly changing things.
 
