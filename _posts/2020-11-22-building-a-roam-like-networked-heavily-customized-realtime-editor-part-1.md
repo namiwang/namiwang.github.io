@@ -5,7 +5,7 @@ excerpt: I can build this. &mdash; every developer at least once
 date: 2014-12-18 16:56:04 +0800
 ---
 
-# why
+# about this project
 
 > I can build this.
 >
@@ -13,7 +13,7 @@ date: 2014-12-18 16:56:04 +0800
 
 Knowledge is hard to manage, as mind is hard to materialize and visualize.
 
-Bi-directional networked tools like roam-research and obsidian are on the trend for a while now. [The idea behind](https://en.wikipedia.org/wiki/Knowledge_graph) is not brand new, yet the much evolved web-based tech makes them possible.
+Bi-directional networked tools like `roam-research` and `obsidian` are on the trend for a while now. [The idea behind](https://en.wikipedia.org/wiki/Knowledge_graph) is not brand new, yet the much evolved web-based tech makes them possible.
 
 ## what I want to build
 
@@ -54,8 +54,9 @@ I’m bad at this, so I just picked the word `fiber` as a synonym for `network` 
 
 ## a prototype on paper
 
-<!-- TODO zoom https://github.com/francoischalifour/medium-zoom -->
-<img src="/assets/images/fiber-note-series/fiber-note-diagram.png" alt="fiber note data structure">
+<a href="/assets/images/fiber-note-series/fiber-note-diagram.png" target="_blank">
+  <img src="/assets/images/fiber-note-series/fiber-note-diagram.png" alt="fiber note data structure">
+</a>
 
 ## a data structure in mind
 
