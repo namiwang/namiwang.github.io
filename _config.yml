@@ -26,6 +26,8 @@ subtitle: 西交民巷 50 号
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dirt
 
+repository: "namiwang/namiwang.github.io"
+
 plugins:
 - jekyll-include-cache
 - jekyll-remote-theme
@@ -33,6 +35,12 @@ plugins:
 - jekyll-seo-tag
 - jekyll-paginate
 # - jekyll-image-size
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
 
 defaults:
   # _posts
@@ -44,7 +52,7 @@ defaults:
       author_profile: true
       author: Nami WANG
       read_time: false
-      comments: false # TODO utterances
+      comments: true
       share: false
       related: true
       show_date: true
