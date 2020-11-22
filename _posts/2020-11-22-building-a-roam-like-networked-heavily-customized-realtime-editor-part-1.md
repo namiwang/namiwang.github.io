@@ -13,15 +13,15 @@ date: 2020-11-12 20:21:42 +0800
 
 Knowledge is hard to manage, as mind is hard to materialize and visualize.
 
-Bi-directional networked tools like `roam-research` and `obsidian` are on the trend for a while now. [The idea behind](https://en.wikipedia.org/wiki/Knowledge_graph) is not brand new, yet the much evolved web-based tech makes them possible.
+Bi-directional networked tools like `roam-research` and `obsidian` are on the trend for a while now. [The idea behind them](https://en.wikipedia.org/wiki/Knowledge_graph) is not brand new, yet the much evolved web-based tech makes them possible.
 
 ## what I want to build
 
 I record my building of `fiber-note` in this series of dev posts, what I want to build is:
 
-* tag-based bi-directional networked note taking
+* tag-based bi-directional networked note-taking
 * web-based real-time experience
-    * constantly auto saving
+    * constantly auto-saving
     * real-time reactive interface
         * updating components other than the editor (related notes, navigation, tags network, calendar, etc.)
 * a highly-customized editor
@@ -31,7 +31,7 @@ I record my building of `fiber-note` in this series of dev posts, what I want to
     * handle meta data like tags, assigning unique ids for the block
     * complex UI like inline drop-down menu
     * …
-* visualize data as network and calendar
+* visualize data as a network and a calendar
 * open-sourced and self-hosted
 
 ## code & demo
@@ -46,9 +46,9 @@ I also put up a public demo running at [fiber-note-demo.herokuapp.com](https://f
 
 ## naming the project
 
-I always use rails as first choice for web projects, and the first code name for this project is `roam-on-rails`, which is a bad joke, since I’ve already got a project called [ruby on rust](https://github.com/ruby-on-rust/ruby-on-rust).
+I always use rails as my first choice for web projects, and the first code name for this project is `roam-on-rails`, which is a bad joke since I’ve already got a project called [ruby on rust](https://github.com/ruby-on-rust/ruby-on-rust).
 
-I’m bad at this, so I just picked the word `fiber` as a synonym for `network` from thesaurus.
+I’m bad at this, so I just picked the word `fiber` as a synonym for `network` from the thesaurus.
 
 # designing the data structure
 
@@ -73,7 +73,7 @@ There’re some edge cases to consider
 
 Apparently we need to maintain a graph, yet I didn’t choose a graph-oriented database like `neo4j`. Using good old SQL to simulate one is good enough for now.
 
-There’re both plugins to do graph on database level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and rails level (like [edge](https://github.com/jackc/edge)). For the initial implementation, I chose to hand-written everything from ground for faster iteration because I was constantly changing things.
+There’re both plugins to do graph on database level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and rails level (like [edge](https://github.com/jackc/edge)). For the initial implementation, I chose to hand-written everything from the grounded up for faster iteration because I was constantly changing things.
 
 # choosing an editor
 
@@ -83,11 +83,11 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
 
 * restrict the doc to a special set of content types (like list, list item, inline tags)
 * render existing data into the editor
-* inspect and manipulate input from user
+* inspect and manipulate input from the user
     * enforce a limitation on what type of contents may input (list item, paragraph, inline span, etc.)
-    * assign unique id to created blocks
+    * assign unique ids to created blocks
 * implement drop-down menu to auto-complete tags
-* send updated content to server
+* send updated content to the server
 * features we may need in the future
     * copy-and-paste, drag-and-drop, image, etc.
 
@@ -108,16 +108,16 @@ I tried a few options. At the end I settled with [prose-mirror](https://prosemir
 
 ## trix
 
-As a rails user, my first thought is `actiontext` and [trix](https://trix-editor.org/). Trix is perfect for adding out-of-box rich-text editing to a normal rails app, like rails, it just works.
+As a rails user, my first thought are `actiontext` and [trix](https://trix-editor.org/). Trix is perfect for adding out-of-box rich-text editing to a normal rails app, like rails, it just works.
 
 It’s just hard to tweak for more custom features.
 
 * it completely intertwined with rails’ components like `actionview` (rendering) and `activestorage` (image uploading), it’s hard to mutate the saved content without hacking into hidden methods.
 * it saves content as raw HTML fragment, which is bad because
-    * uniq content have multiple legit representations
+    * unique content have multiple legit representations
     * it’s slow to parse and manipulate the content (say tags detection, image processing, table mutation, etc.)
 * it doesn’t come with detailed docs/specs about the format of generated HTML docs, which is not reliable when you system relies on processing the content on-the-fly.
-* there’s minimal events not enough to compose complex logic around the users input
+* minimal events not enough to compose complex logic around the user's operation
 
 ## quill
 
@@ -127,9 +127,9 @@ It’s easy to integrate the library, tweak some configurations, and apply diffe
 
 It’s not easy to limit what kind of content is allowed in the document, or what would happen if a special formatted text is pasted.
 
-It’s hard to pragmatically control the mutation of the data to manually implement functions like “create another list item with same indent when *return* is pressed and current cursor on the end of a list item, including the end of a inline span of a list item”.
+It’s hard to pragmatically control the mutation of the data to manually implement functions like “create another list item with the same indent when *return* is pressed and current cursor on the end of a list item, including the end of an inline span of a list item”.
 
-It’s not impossible, yet it will get over-complicated if you need many of these kind of mutations.
+It’s not impossible, yet it will get over-complicated if you need many mutations like this.
 
 ## prose-mirror
 
@@ -143,4 +143,4 @@ You’ll spend a lot of time jumping between the [guides](https://prosemirror.ne
 
 # next chapter
 
-Thanks, in next chapter, let’s discuss how to build and tweak the editor to meet our demand.
+Thanks, in the next chapter, let’s discuss how to build and tweak the editor to meet our demand.
