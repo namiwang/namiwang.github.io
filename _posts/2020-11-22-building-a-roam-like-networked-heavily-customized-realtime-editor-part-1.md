@@ -77,7 +77,7 @@ There’re both plugins to do graph on database level ([AGE](https://www.postgre
 
 # choosing an editor
 
-Obviously this is gonna be a front-end-heavy project, I have to choose an editor as one of the first steps.
+This is gonna be a front-end-heavy project, I have to choose an editor as one of the first steps.
 
 ## requirements
 
