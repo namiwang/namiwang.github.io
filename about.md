@@ -4,7 +4,9 @@ title: About & Projects
 permalink: /about/
 ---
 
-I'm a developer who writes different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
+I write different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
+
+I did some competitive programming as a teenager (attended NOI 08', 09' in China), and now I work as an indie developer.
 
 # major side-projects
 
@@ -38,7 +40,7 @@ An implementation of ruby in pure rust, consists of (barely working) lexer and p
 
 I started this project as a way to learn rust. Eventually, I've learned more than that, including lexer & parser, `ragel`, and a lot of ruby's hidden magic.
 
-Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapted some rules from `parser` and ported from ragel-6 to ragel-7 For parser, I use `syntax-cli` as the parser generator.
+Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapted some rules from `parser` and ported from ragel-6 to ragel-7. For parser, I use `syntax-cli` as the parser generator.
 
 ## project yoru
 
