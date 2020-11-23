@@ -16,6 +16,10 @@ I'm a developer who writes different kinds of code. You can find me as [@nami_m_
 
 [fiber-note](https://github.com/namiwang/fiber-note) is a bi-directional networked note-taking app which is open and self-hosting, inspired by `roam-research`, `obsidian` and others.
 
+I'm working on a series of dev diaries around the building of fiber-note:
+
+- [part #1](https://namiwang.github.io/2020/11/12/building-a-roam-like-networked-heavily-customized-realtime-editor-part-1.html)
+
 ## references.wiki
 
 <a href="https://references.wiki" target="_blank">
