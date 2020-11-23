@@ -26,8 +26,8 @@ I record my building of `fiber-note` in this series of dev posts, what I want to
         * updating components other than the editor (related notes, navigation, tags network, calendar, etc.)
 * a highly-customized editor
     * enforce a custom schema to control the layout of the documents
-        * say everything is a list item, there may be only text and tags in paragraph, etc.
-    * handle meta data like tags, assigning unique ids for the block
+        * say everything is a list item, there may be only text and tags in a paragraph, etc.
+    * handle meta-data like tags, assigning unique ids for the block
     * complex UI like inline drop-down menu
     * …
 * visualize data as a network and a calendar
