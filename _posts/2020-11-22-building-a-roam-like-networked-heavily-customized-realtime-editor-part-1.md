@@ -102,7 +102,7 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
 |themes	|no	|yes	|no	|
 |docs	|minimal	|detailed	|detailed	|
 |typescript	|no	|yes	|yes	|
-|scenario	|adding rich-text editing to your rails app in 10 minutes	|building editor email client with some cool features like markdown syntax	|building editor for an collaborative encyclopaedia with custom schema.	|
+|scenario	|adding rich-text editing to your rails app in 10 minutes	|building editor email client with some cool features like markdown syntax	|building editor for a collaborative encyclopaedia with custom schema.	|
 
 I tried a few options. At the end I settled with [prose-mirror](https://prosemirror.net/) to build fiber-note due to thorough guides and references, up-to-date maintaining, and [a friendly forum](https://discuss.prosemirror.net/).
 
