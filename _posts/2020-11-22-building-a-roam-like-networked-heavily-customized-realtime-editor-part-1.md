@@ -72,7 +72,7 @@ There’re some edge cases to consider
 
 Apparently we need to maintain a graph, yet I didn’t choose a graph-oriented database like `neo4j`. Using good old SQL to simulate one is good enough for now.
 
-There’re both plugins to do graph on database level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and rails level (like [edge](https://github.com/jackc/edge)). For the initial implementation, I chose to hand-written everything from the grounded up for faster iteration because I was constantly changing things.
+There’re both plugins to do graph on database-level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and app-level (e.g. [ancestry](https://github.com/stefankroes/ancestry)). For the initial implementation, I chose to hand-written everything from the grounded up for faster iteration because I was constantly changing things.
 
 # choosing an editor
 
