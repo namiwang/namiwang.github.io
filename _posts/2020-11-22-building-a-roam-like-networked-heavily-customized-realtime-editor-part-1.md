@@ -72,7 +72,7 @@ There’re some edge cases to consider
 
 Apparently we need to maintain a graph, yet I didn’t choose a graph-oriented database like `neo4j`. Using good old SQL to simulate one is good enough for now.
 
-There’re both plugins to do graph on database level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and rails level (like [edge](https://github.com/jackc/edge)). For the initial implementation, I chose to hand-written everything from the grounded up for faster iteration because I was constantly changing things.
+There’re both plugins to do graph on database-level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and app-level (e.g. [ancestry](https://github.com/stefankroes/ancestry)). For the initial implementation, I chose to hand-written everything from the grounded up for faster iteration because I was constantly changing things.
 
 # choosing an editor
 
@@ -102,7 +102,7 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
 |themes	|no	|yes	|no	|
 |docs	|minimal	|detailed	|detailed	|
 |typescript	|no	|yes	|yes	|
-|scenario	|adding rich-text editing to your rails app in 10 minutes	|building editor email client with some cool features like markdown syntax	|building editor for an collaborative encyclopaedia with custom schema.	|
+|scenario	|adding rich-text editing to your rails app in 10 minutes	|building editor email client with some cool features like markdown syntax	|building editor for a collaborative encyclopaedia with custom schema.	|
 
 I tried a few options. At the end I settled with [prose-mirror](https://prosemirror.net/) to build fiber-note due to thorough guides and references, up-to-date maintaining, and [a friendly forum](https://discuss.prosemirror.net/).
 
