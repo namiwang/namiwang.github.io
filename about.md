@@ -6,7 +6,9 @@ permalink: /about/
 
 I write different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
 
-I did some competitive programming as a teenager (attended NOI '08, '09 in China), and now I work as an indie developer. I've been working on mobile/pc games, compilers, and regular full-stack web developments.
+I did some competitive programming as a teenager (attended NOI '08, '09 in China), and now I work as an indie developer.
+
+I've been working on mobile/pc games, compilers, and regular full-stack web developments.
 
 # major side-projects
 
