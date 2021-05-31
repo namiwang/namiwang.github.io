@@ -22,8 +22,8 @@ title: 「代碼指南」編輯部
 subtitle: 西交民巷 50 号
 
 # Build settings
-# theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
+# remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dirt
 
 repository: "namiwang/namiwang.github.io"

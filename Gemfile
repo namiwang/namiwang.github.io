@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.1.1"
-# gem 'minimal-mistakes-jekyll'
+gem 'minimal-mistakes-jekyll'
 
 group :jekyll_plugins do
   # gem "github-pages"
@@ -15,3 +15,5 @@ group :jekyll_plugins do
 
   gem 'jekyll-admin'
 end
+
+gem "webrick", "~> 1.7"

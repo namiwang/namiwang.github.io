@@ -1,11 +1,12 @@
 ---
 layout: single
-title: 为什么不应该贸然升级 ubuntu 和 gnome，和分区表修复经验
-excerpt: 不论它看起来多美，不要贸然升级。
+title: 为什么不应该贸然升级 ubuntu 和 gnome，以及如何修复分区表
+excerpt: don't feed dogfood to your only compute
 date: 2011-05-29 22:43
+published: false
 ---
 
-不论它看起来多美，不要贸然升级。
+如果你只有一台电脑的话，就不要贸然升级，不论它看起来多美。
 
 在我把 ubuntu 升级到 11.04 之后，系统就已经开始各种出错，不过还勉强能用。但是在 gnome3 发布的第一时间更新到 gnome3 则是个贸然的举动。启动后就只能停留在登录界面，不能选择用户，只有一个按钮，点开是重启、挂起、关机。<a href="http://forum.Ubuntu.org.cn/viewforum.php?f=49" target="_blank">很多人</a>都遇到了这个问题。据说杯具的源头是使用 ppa 源不能正确的安装 gnome-shell，这时可以进入恢复模式之后，使用 `apt-get install unity` 或者 `apt-get install gnome-shell` 来解决，但对我这个复杂的网络环境来讲，在命令行中连网也无比麻烦，于是这条路断了。
 
@@ -43,4 +44,4 @@ Device Boot Start End Blocks Id System
 
 一番 google 无果，我最终放弃了解决这个问题，考虑到 11.04 之后已经很不稳定，而且一直想调整 /home 的分区大小无果，就决定直接删掉所有的 Ubuntu 分区重新安装。既然能正确的重建sda5，就能保住d盘，c盘(sda2)也不动，这样windows也没有影响，而且经测试重建了 sda4 就可以被 Ubuntu 安装程序正常识别分区信息，遂删除 sda6789。
 
-重启之后杯具袭来，因为这时系统还是万恶的grub引导的，然后grub找不到 ubuntu 的分区了。不过这个也在预想之中，进 livecd 重装 Ubuntu，问题解决，windows无恙。
+重启之后发现系统还是 grub 引导的，然后 grub 找不到 ubuntu 的分区了。不过这个也在预想之中，进 livecd 重装 Ubuntu，问题解决，windows无恙。
