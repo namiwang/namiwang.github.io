@@ -14,9 +14,9 @@ Assume we don't have a git implementation, and we're building a service to mimic
 - a server with data models and APIs to mutate the git repository
 - a client to accept git commands and take actions
 
-# server
+## server
 
-## storage
+### storage
 
 Git uses a file-based data store. However, the underlying database is irrelevant to our imaginary service. All we need is a magical key-value store (an SQLite database, or multiple JSON files) with essential functions:
 
@@ -24,11 +24,11 @@ Git uses a file-based data store. However, the underlying database is irrelevant
 - to save a value as a specific model while generating a unique id (or use a provided one)
 - to fetch a value by model and id
 
-## the core models
+### the core models
 
 Git itself is not that complex. It relies on only a trinity of three core models to operate. Additionally, there're references acting like annotated shortcuts.
 
-### blob
+#### blob
 
 - a blob is simply a segment of binary content, without metadata like filename and timestamp
 - it's a snapshot of a specific version of a file. After all, it's a version control service, and this is our tiniest unit to control
@@ -39,7 +39,7 @@ id: id
 content: string
 ```
 
-### tree
+#### tree
 
 - a tree contains its path plus a list of (pointers of) other blobs or trees, just like a directory containing the path of itself plus files and sub-directories within
 - we could recursively build a tree from only one root node TBD
@@ -53,7 +53,7 @@ children: [{
 }]
 ```
 
-### commit
+#### commit
 
 - a commit is like a little yellow sticker with a piece of message attached to the trunk of a tree
 - therefore, it consists of a message string and a pointer to a tree
@@ -67,7 +67,7 @@ parent_ids: id[]
 message: string
 ```
 
-## reference
+#### reference
 
 - A reference is a named commit. That's it
 - In reality, git doesn't treat references the same way as the other three core models, yet it doesn't matter to our fantasy service
@@ -80,53 +80,53 @@ id: id
 commit_id: id
 ```
 
-to recap
+#### to recap
 
 - a blob is a snapshot of one file
 - a tree is a snapshot of one directory
 - a commit is a snapshot of the repository, with a piece of message
 - a reference points to a commit that you often care about
 
-## a sample scenario
+### a sample scenario
 
 We will define some preliminary data to represent a repository with exactly one file and one commit.
 
-### files
+#### files
 
 |path   |content|
 |-------|-------|
 |/constitution.md|We the People of…|
 
-### blobs
+#### blobs
 
 |id   |content          |
 |-----|-----------------|
 |blob1|We the People of…|
 
-### trees
+#### trees
 
 |id     |path |children|
 |-------|-----|--------|
 |tree1  |/constitution.md|[]      |
 
-### commits
+#### commits
 
 |id     |tree_id|message     |parent_ids|
 |-------|-------|------------|----------|
 |commit1|tree1  |first commit|[]        |
 
-### references
+#### references
 
 |id     |commit_id|
 |-------|---------|
 |heads/master|commit1  |
 |HEAD   |commit1  |
 
-# client
+## client
 
 Following are the pseudocode snippets to handle different git commands.
 
-## branch & checkout
+### branch & checkout
 
 The sweet command `git checkout` is a sweet shortcut for one `git branch` plus one `git checkout`. `git branch` creates the new branch, and `git checkout` updates the `HEAD` references.
 
@@ -142,7 +142,7 @@ branch_ref = POST /refs { id: 'heads/{branch_name}', commit_id: current_head.com
 PATCH /refs/HEAD { commit_id: branch_ref.id }
 ```
 
-## a lucid notation
+### a lucid notation
 
 The pseudocode above looks tedious and for better readability, let's try a painless notation:
 
@@ -151,7 +151,7 @@ The pseudocode above looks tedious and for better readability, let's try a painl
 - PATCH /models/id → Model.update
 - …
 
-## add & commit
+### add & commit
 
 We're ignoring concepts like local, remote, and staging, so adding and committing must be combined as an atomic action.
 
@@ -176,7 +176,7 @@ Ref.find('heads/fix/amendment-1').update(commit_id: new_commit.id)
 Ref.find('HEAD').update(commit_id: new_commit.id)
 ```
 
-## merge
+### merge
 
 Merging is troublesome, the variations of positions and amount of branches demand different actions, plus it may eventually fail due to conflicts.
 
@@ -226,29 +226,29 @@ head_ref.update(commit_id: new_commit.id)
 incoming_commit.update(commit_id: new_commit.id)
 ```
 
-# next steps
+## next steps
 
-## advanced merging and rebasing
+### advanced merging and rebasing
 
 We haven't touched the following topics:
 
 - conflicts detection, merge strategy, octopus merge, etc.
 - rebase command and the options like amend and squash
 
-## branches as resources
+### branches as resources
 
 A resource-oriented API service could be pretty flexible. One resource doesn't strictly bond with a corresponding model in the data store. In a friendly git service, for example, branches and tags could be defined as resources, providing functions like
 
 - GET /branches?prefix='fix/'
 - POST /branches?base=base
 
-## conflicts and mergeability
+### conflicts and mergeability
 
 Git hosting services tend to invent concepts like `pull/merge request` to handle mergeability, which is inevitably necessary for collaboration between committers. But for git itself, we could propose a more transparent suite of API like
 
 - GET /conflicts?base=head&incoming=some-commit
 
-## operation as a service
+### operation as a service
 
 We could also design routes for operations like
 
@@ -258,7 +258,7 @@ And now the status `409 Conflict` sounds perfectly appropriate.
 
 Some would say this is not entirely `representational` since there's no resource created. I'd rather think of this as a shortcut for creating an ephemeral resource that has side effects.
 
-# read more
+## read more
 
 - [https://git-scm.com/book/en/v2/Git-Internals-Git-Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 - [https://en.wikipedia.org/wiki/Git](https://en.wikipedia.org/wiki/Git#Data_structures)

@@ -5,7 +5,7 @@ excerpt: I can build this. &mdash; every developer at least once
 date: 2020-11-12 20:21:42 +0800
 ---
 
-# about this project
+## about this project
 
 > I can build this.
 >
@@ -15,7 +15,7 @@ Knowledge is hard to manage, as mind is hard to materialize and visualize.
 
 Bi-directional networked tools like `roam-research` and `obsidian` are on the trend for a while now. [The idea behind them](https://en.wikipedia.org/wiki/Knowledge_graph) is not brand new, yet the much evolved web-based tech makes them possible.
 
-## what I want to build
+### what I want to build
 
 I record my building of `fiber-note` in this series of dev posts, what I want to build is:
 
@@ -33,7 +33,7 @@ I record my building of `fiber-note` in this series of dev posts, what I want to
 * visualize data as a network and a calendar
 * open-sourced and self-hosted
 
-## code & demo
+### code & demo
 
 <a href="https://github.com/namiwang/fiber-note" target="_blank">
   <img src="/assets/images/fiber-note.gif" width="480" alt="fiber note screenshot">
@@ -43,21 +43,21 @@ I placed the source [here](https://github.com/namiwang/fiber-note), which could 
 
 I also put up a public demo running at [fiber-note-demo.herokuapp.com](https://fiber-note-demo.herokuapp.com/session/new) (password is `password`).
 
-## naming the project
+### naming the project
 
 I always use rails as my first choice for web projects, and the first code name for this project is `roam-on-rails`, which is a bad joke since I’ve already got a project called [ruby on rust](https://github.com/ruby-on-rust/ruby-on-rust).
 
 I’m bad at this, so I just picked the word `fiber` as a synonym for `network` from the thesaurus.
 
-# designing the data structure
+## designing the data structure
 
-## a prototype on paper
+### a prototype on paper
 
 <a href="/assets/images/fiber-note-series/fiber-note-diagram.png" target="_blank">
   <img src="/assets/images/fiber-note-series/fiber-note-diagram.png" alt="fiber note data structure">
 </a>
 
-## a data structure in mind
+### a data structure in mind
 
 The whole database is structured as a directed graph. The basic unit is a `block`, a node in the graph, representing a paragraph, bearing data like its content and optional tags.
 
@@ -68,17 +68,17 @@ There’re some edge cases to consider
 * have to avoid cycles in the graph
 * a tag may points to the same note
 
-## a data structure on disk
+### a data structure on disk
 
 Apparently we need to maintain a graph, yet I didn’t choose a graph-oriented database like `neo4j`. Using good old SQL to simulate one is good enough for now.
 
 There’re both plugins to do graph on database-level ([AGE](https://www.postgresql.org/about/news/announcing-age-a-multi-model-graph-database-extension-for-postgresql-2050/) for postgresql), and app-level (e.g. [ancestry](https://github.com/stefankroes/ancestry)). For the initial implementation, I chose to hand-written everything from the grounded up for faster iteration because I was constantly changing things.
 
-# choosing an editor
+## choosing an editor
 
 This is gonna be a front-end-heavy project, I have to choose an editor as one of the first steps.
 
-## requirements
+### requirements
 
 * restrict the doc to a special set of content types
     * e.g. allow list, list item, and inline tags; disallow individual paragraphs or images
@@ -91,7 +91,7 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
 * features we may need in the future
     * copy-and-paste, drag-and-drop, image, etc.
 
-## comparision
+### comparision
 
 |	|trix	|quill	|prose-mirror	|
 |---	|---	|---	|---	|
@@ -106,7 +106,7 @@ This is gonna be a front-end-heavy project, I have to choose an editor as one of
 
 I tried a few options. At the end I settled with [prose-mirror](https://prosemirror.net/) to build fiber-note due to thorough guides and references, up-to-date maintaining, and [a friendly forum](https://discuss.prosemirror.net/).
 
-## trix
+### trix
 
 As a rails user, my first thought are `actiontext` and [trix](https://trix-editor.org/). Trix is perfect for adding out-of-box rich-text editing to a normal rails app, like rails, it just works.
 
@@ -119,7 +119,7 @@ It’s just hard to tweak for more custom features.
 * it doesn’t come with detailed docs/specs about the format of generated HTML docs, which is not reliable when you system relies on processing the content on-the-fly.
 * minimal events not enough to compose complex logic around the user's operation
 
-## quill
+### quill
 
 [quill](https://quilljs.com/) is another competitive  candidate, regarding elaborated docs, data format specs, themes, and typescript support.
 
@@ -131,7 +131,7 @@ It’s hard to pragmatically control the mutation of the data to manually implem
 
 It’s not impossible, yet it will get over-complicated if you need many mutations like this.
 
-## prose-mirror
+### prose-mirror
 
 `prose-mirror` has the most complicated structure.  You have to import **at least ten packages** to build a simple demo, each managing a single aspect of the editor (model, view, schema definitions, keymaps, etc.).
 
@@ -141,6 +141,6 @@ Verbosity and redundancy means total control and vice versa, it just have to be 
 
 You’ll spend a lot of time jumping between the [guides](https://prosemirror.net/docs/guide/), the [references for individual packages](https://prosemirror.net/docs/ref/), and even the source code. I can promise you that the guide will be a great read about the designing of a complicated modular system.
 
-# next chapter
+## next chapter
 
 Thanks for reading. In the next post, I'll discuss how I built and tweaked the editor.
