@@ -1,6 +1,8 @@
 ---
+layout: single
 title: 'git restful: a thought experiment to help understand how git works, part 1'
 excerpt: This is not an implementation of any kind but rather a thought experiment, which I found quite intuitive for ordinary developers to understand how git works and what happens behind different commands
+date: 2021-05-31 22:48:12 +0800
 ---
 
 git restful: a thought experiment to help understand how git works, part 1
