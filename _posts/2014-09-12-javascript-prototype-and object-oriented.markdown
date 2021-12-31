@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Javascript: Prototype and Object-oriented"
-excerpt: 由若干 key-value pairs 組成的結構，在 Ruby 裏稱 `Hash`，在 Python 裏稱爲 `Map`，在 Javascript 中叫做 `Object`。
+excerpt: 由若干 key-value pairs 組成的結構，在 ruby 裏稱 `hash`，在 javascript 中叫做 `object`
 date: 2014-09-12 23:25
 ---
 
@@ -9,7 +9,7 @@ date: 2014-09-12 23:25
 
 由若干 key-value pairs 組成的結構，在 Ruby 裏稱 `Hash`，在 Python 裏稱爲 `Map`，在 Javascript 中叫做 `Object`。
 
-但 Ruby 中還有 Ruby 的 Object，Javascript 中再無 Hash，Javascript 只有 Object，它同時扮演了在其他語言中的不同概念：`hash`，`object`，`class`，甚至 `function` 和 `method`。如果處於普遍意義上的 Object-oriented 語境中，則可說它既是 class，也是 instance，甚至也是 method。
+但 ruby 中還有 ruby 的 object，javascript 中再沒有另一個「對象」，javascript 只有 object，它同時扮演了在其他語言中的不同概念：`hash`，`object`，`class`，甚至 `property`，`function` 和 `method`。如果處於普遍意義上的 Object-oriented 語境中，則可說它既是 class，也是 instance，甚至也是 method。
 
 有人據此認爲「javascript 中一切都是 object」，這種說法容易產生誤解。
 
@@ -54,9 +54,9 @@ var student = new Object()
 student.name = 'a name'
 ```
 
-這裏的 `new` 也是一個 operator。而 `Object` 是一個 constructor。就像在 C++ 或 Ruby 中，class 是構造 object 的模板；而在 Javascript 中，人們用一個叫做 prototype 的 object 作爲 constructor 來構建另一個 object。
+這裏的 `new` 也是一個 operator。而 `Object` 是一個 constructor。就像在 C++ 或 ruby 中，class 是構造 object 的模板；而在 javascript 中，人們用一個叫做 prototype 的 object 作爲 constructor 來構建另一個 object。
 
-*<small>因此人們說 Javascript 是 prototype-based。而 C++ 則是 object-based。</small>*
+*<small>因此人們說 javascript 是 prototype-based。而 C++ 則是 object-based。</small>*
 
 *<small>這裏一個更重要的區別是，class 定義後無法修改，而 prototype 則相反。這種運行時可以改變自身結構的特性，叫做 meta-programming，通常說這種語言是 dynamic 的。</small>*
 
@@ -136,7 +136,7 @@ var Student = function(name) {
 
   *<small>當然，constructor 也可能有自己的 constructor 和自己的 [[prototype]]。</small>*
 
-  *<small>對我來講，之所以這裏曾經令我費解，主要是因爲我不理解 prototype 這個詞的本義。我用過 C++，Java，Ruby，我瞭解什麼是 OOP 中的 constructor，instance，和 inherite，但在決定深入瞭解 Javascript 之前，我完全沒有 prototype 這個概念。</small>*
+  *<small>對我來講，之所以這裏曾經令我費解，是因爲我不理解 prototype 這個詞的本義。我瞭解什麼是 OOP 中的 constructor，instance，和 inherite，但在決定深入瞭解 Javascript 之前，我完全沒有 prototype 這個概念。一些時候，面對技術問題，詞典和同義詞典也能起到妙用。</small>*
 
 解決了令人疑惑的概念，我們回到之前的地方。
 
@@ -146,9 +146,9 @@ var Student = function(name) {
 
 instanceof 又是一個 operator。顧名思義，`bob instanceof Student` 的意思就是 `is bob an instance of Student?`。
 
-通俗的比喻，constructor 與 instance 之間是一種「互逆」的關係。bob 的 constructor 是 Student，bob 也就是基於 Student 構造出的 instance。
+通俗的說法是，constructor 與 instance 之間是一種「互逆」的關係。bob 的 constructor 是 Student，bob 也就是基於 Student 構造出的 instance。
 
-但這比喻其實並不完全準確，因爲 bob 只能有一個 constructor，但是 Student 可能構造出無數個 instance。更何況，還要考慮 constructor 的 constructor 的問題。也就是，Z 繼承自 X，X 繼承自 Y，……，B 繼承自 A。這時 Z 既 `instanceof A`，也 `instanceof Y`。這時互逆的關係就可能不再成立。
+但這個說法並不完全準確，因爲 bob 只能有一個 constructor，但是 Student 可能構造出無數個 instance。更何況，還要考慮 constructor 的 constructor 的問題。也就是，Z 繼承自 X，X 繼承自 Y，……，B 繼承自 A。這時 Z 既 `instanceof A`，也 `instanceof Y`。這時互逆的關係就可能不再成立。
 
 顯然，這種繼承的關係是一個鏈（chain）式結構，我們之前瞭解到，這種關係是通過 [[prototype]] 來維護的。事實上，這種關係就叫做 `prototype chain`。
 

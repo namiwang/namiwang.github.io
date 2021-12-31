@@ -1,9 +1,12 @@
 Nami WANG:
   name: Nami WANG
-  bio: Competitive programmer then, indie developer now. Working on webdev, indie games, and compilers, with ruby, typescript, and rust. Looking for opportunity.
+  bio: Competitive programmer then, full-stack developer now. Working on webdev, indie games, and compilers, with ruby, typescript, and rust. Also translate and write. @microsoft
 
   # avatar: "/assets/images/bio-photo-2.jpg"
   links:
+    - label: About & projects
+      icon: "fas fa-fw fa-link"
+      url: https://namiwang.github.io/about
     - label: "nami.m.wang@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:nami.m.wang@gmail.com"

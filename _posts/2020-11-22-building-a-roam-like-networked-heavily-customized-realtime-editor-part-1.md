@@ -121,7 +121,7 @@ It’s just hard to tweak for more custom features.
 
 ### quill
 
-[quill](https://quilljs.com/) is another competitive  candidate, regarding elaborated docs, data format specs, themes, and typescript support.
+[quill](https://quilljs.com/) is another competitive candidate, regarding elaborated docs, data format specs, themes, and typescript support.
 
 It’s easy to integrate the library, tweak some configurations, and apply different themes. You can add markdown syntax support in like 10 minutes.
 

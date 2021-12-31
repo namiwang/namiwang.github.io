@@ -6,9 +6,11 @@ permalink: /about/
 
 I write different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
 
-I did some competitive programming as a teenager (attended NOI '08, '09 in China), and now I work as an indie developer.
+I did some competitive programming as a teenager (attended NOI '08, '09 in China), and now I work as a full-stack developer for @microsoft.
 
-I've been working on mobile/pc games, compilers, and regular full-stack web developments.
+I've been working on indie games, compilers, and regular full-stack web developments.
+
+I also translate tech materials and write [short stories](https://weilu.community).
 
 # major side-projects
 
@@ -30,7 +32,7 @@ I'm working on a series of dev diaries around the building of fiber-note:
   <img src="/assets/images/ref-wiki.png" width=480 alt="references.wiki screenshot">
 </a>
 
-I watched so many tv shows (especially sitcoms) that I have to build [references.wiki](https://references.wiki/) to organize and visualize pop culture references between tv shows, video games, fictional characters, etc.
+I watched/played so many tv shows/video games that I have to build [references.wiki](https://references.wiki/) to organize and visualize pop culture references between tv shows, video games, fictional characters, etc.
 
 I composed scrappers to fetch and parse the occurrences of pop culture references in different wikia (fandom) sites. Currently I’ve parsed around 5000 references between 1000 works/celebrities.
 
@@ -56,12 +58,12 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 [Project yoru](https://github.com/project-yoru) is a set of projects to build cross-platform visual novel games from only assets and scripts, without coding.
 
-To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap build`, which are all (basically) dead by now \:\|
+To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap build`, which are all practically dead by now \:\|
 
 # tiny projects
 
 - [icons.land](https://icons.land): to search icons from different packs like font-awesome, ionicons, etc.
-- [streaming guide](https://streaming-guide.github.io): help me decide which streaming service (nf, hulu, disney+) should I subscribe to
+- [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
 - [wiki flutter](https://github.com/namiwang/wiki-flutter): a wikipedia client in flutter
 
 # utility libs
@@ -77,7 +79,7 @@ To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap 
 
 ## as a novelist
 
-- I publish some of my novels at 围炉（[weilu.community](https://weilu.community)）
+- I publish some of my short stories at 圍爐（[weilu.community](https://weilu.community)）
 
 <!-- # communities
 
