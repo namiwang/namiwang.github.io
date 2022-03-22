@@ -6,15 +6,18 @@ permalink: /about/
 
 I write different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
 
-I did some competitive programming as a teenager (attended NOI '08, '09 in China), and now I work as a full-stack developer for @microsoft.
+I did some competitive programming as a teenager (NOI '08, '09 in China), and now I work as a full-stack developer for @microsoft.
 
-I've been working on indie games, compilers, and regular full-stack web developments.
+I've been working on indie games, compilers, and regular full-stack developments.
 
 I also translate tech materials and write [short stories](https://weilu.community).
 
-# major side-projects
+# side-projects
 
 ## fiber note
+
+<details markdown=1>
+<summary markdown="span">a bi-directional networked note-taking app</summary>
 
 <a href="https://github.com/namiwang/fiber-note" target="_blank">
   <img src="/assets/images/fiber-note.gif" width="480" alt="fiber note screenshot">
@@ -26,7 +29,12 @@ I'm working on a series of dev diaries around the building of fiber-note:
 
 - [part #1](https://namiwang.github.io/2020/11/12/building-a-roam-like-networked-heavily-customized-realtime-editor-part-1.html)
 
+</details>
+
 ## references.wiki
+
+<details markdown=1>
+<summary markdown="span">tracking pop culture references</summary>
 
 <a href="https://references.wiki" target="_blank">
   <img src="/assets/images/ref-wiki.png" width=480 alt="references.wiki screenshot">
@@ -39,8 +47,13 @@ I composed scrappers to fetch and parse the occurrences of pop culture reference
 I built my own knowledge base to cross-reference sources like wikidata, google kg, and wolfram alpha. I implemented a customized editor for user to create new references between works.
 
 The next step will be UGC workflow (I’m considering a git-based one), editing history and data visualization.
+</details>
 
 ## ruby on rust
+
+<!-- https://github.com/gettalong/kramdown/issues/155 -->
+<details markdown=1>
+<summary markdown="span">An implementation of ruby in rust</summary>
 
 [https://github.com/ruby-on-rust/ruby-on-rust](https://github.com/ruby-on-rust/ruby-on-rust)
 
@@ -50,18 +63,27 @@ I started this project as a way to learn rust. Eventually, I've learned more tha
 
 Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapted some rules from `parser` and ported from ragel-6 to ragel-7. For parser, I use `syntax-cli` as the parser generator.
 
+</details>
+
 ## project yoru
 
-<img src="/assets/images/project-yoru-1.png" width=480 alt="project yoru screenshot">
+<details markdown=1>
+  <summary markdown="span">visual novel generator</summary>
 
-<img src="/assets/images/project-yoru-2.png" width=480 alt="project yoru screenshot">
+  <img src="/assets/images/project-yoru-1.png" width=480 alt="project yoru screenshot">
 
-[Project yoru](https://github.com/project-yoru) is a set of projects to build cross-platform visual novel games from only assets and scripts, without coding.
+  <img src="/assets/images/project-yoru-2.png" width=480 alt="project yoru screenshot">
 
-To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap build`, which are all practically dead by now \:\|
+  [Project yoru](https://github.com/project-yoru) is a set of projects to build cross-platform visual novel games from only assets and scripts, without coding.
+
+  To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap build`, which are all practically dead by now \:\|
+</details>
+
+<br>
 
 # tiny projects
 
+- [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki.
 - [icons.land](https://icons.land): to search icons from different packs like font-awesome, ionicons, etc.
 - [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
 - [wiki flutter](https://github.com/namiwang/wiki-flutter): a wikipedia client in flutter
@@ -79,7 +101,7 @@ To build this project, I was using `polymer`, lots of `gulp` scripts, `phonegap 
 
 ## as a novelist
 
-- I publish some of my short stories at 圍爐（[weilu.community](https://weilu.community)）
+- I publish short stories at 圍爐（[weilu.community](https://weilu.community)）
 
 <!-- # communities
 

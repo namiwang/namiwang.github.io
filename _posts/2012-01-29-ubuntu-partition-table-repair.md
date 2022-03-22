@@ -5,7 +5,7 @@ excerpt: don't feed dogfood to your only computer (with a dual boot system)
 date: 2011-05-29 22:43
 ---
 
-> update: 十年后看十年前的 post，外链已经都是死链了，如果互联网是一个 hive mind，它是不是也会得老年痴呆？
+> update: 这是 2011 年的经历了，十几年后再看从前的文章，外链已经都是死链了。如果互联网是一个 hive mind，它是不是也会得老年痴呆？
 
 如果你只有一台电脑（还是双系统）的话，就不要贸然升级，不论它看起来多美。
 

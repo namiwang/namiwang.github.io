@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 「代碼指南」編輯部
+title: "Nami's blog"
 subtitle: 西交民巷 50 号
 
 # Build settings
@@ -50,7 +50,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      author: Nami WANG
+      author: Nami W
       read_time: false
       comments: true
       share: false
@@ -76,3 +76,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# markdown: kramdown
+# kramdown:
+#   parse_block_html: true
