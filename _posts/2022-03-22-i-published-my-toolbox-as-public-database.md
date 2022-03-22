@@ -45,6 +45,8 @@ I was reluctant to use notion primarily because:
 
 But to be honest, notion is still the best way I've found to share a bunch of structured data while enabling others to edit and query.
 
+It cost me less than 30 minuts to share the database, config one custom domain, and setup a real domain (🧰 <a href="https://1-toolbox.com" target="_blank">1-toolbox.com</a>) forwarding to the page.
+
 My other choices are:
 
 ### wikimedia
@@ -73,3 +75,9 @@ I set the edit permission to everybody, added some simple rules and am hoping fo
   - don’t start, join, or escalate an edit war
 - don't advertise
   - do give meaningful contribution before self-promote
+
+## feedback welcome
+
+Thanks for reading. If you find 
+🧰 <a href="https://1-toolbox.com" target="_blank">1-toolbox.com</a> 
+useful. Please help share it and maybe update the data as you see fit, eventually all of us can have a better toolbox.
