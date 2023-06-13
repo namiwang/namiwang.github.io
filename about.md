@@ -4,9 +4,9 @@ title: About & Projects
 permalink: /about/
 ---
 
-I write different kinds of code. You can find me as [@nami_m_wang](https://twitter.com/nami_m_wang) on twitter and [@namiwang](https://github.com/namiwang) on github.
+I write different kinds of code.
 
-I did some competitive programming as a teenager (NOI '08, '09 in China), and now I work as a full-stack developer for @microsoft.
+I participated in competitive programming as a teenager (NOI '08, '09 in China), and now I work as a full-stack developer for @microsoft.
 
 I've been working on indie games, compilers, and regular full-stack developments.
 

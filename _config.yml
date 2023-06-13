@@ -18,12 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Nami's blog"
-subtitle: 西交民巷 50 号
+title: nami.land
+# subtitle: 西交民巷 50 号
+# subtitle: Nami's blog
 
 # Build settings
-# theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes
+
+# for local dev
+theme: minimal-mistakes-jekyll
+
+# for prod
+# remote_theme: mmistakes/minimal-mistakes
+
 minimal_mistakes_skin: dirt
 
 repository: "namiwang/namiwang.github.io"
@@ -56,6 +62,7 @@ defaults:
       share: false
       related: true
       show_date: true
+      classes: wide
 
 # Exclude from processing.
 # The following items will not be processed, by default.
