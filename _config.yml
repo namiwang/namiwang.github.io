@@ -25,10 +25,10 @@ title: nami.land
 # Build settings
 
 # for local dev
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
 
 # for prod
-# remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 
 minimal_mistakes_skin: dirt
 
