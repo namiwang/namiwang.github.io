@@ -124,6 +124,8 @@ I calculate the survival state by checking the status of the submitted url. The 
   - The site might refuse to serve my detector:
     - It might determine my request as from a malicious crawler. I use a Cloudflare worker which doesn’t behave like a real user.
     - It might only serve users from specific regions, thus showing an error for me.
+  - The site is now using another domain and not redirecting the old one.
+    - Particularly, many projects are hosted on Github Pages. In 2021, github.com stopped redirecting *.github.com to *.github.io, so many old links are now invalid.
   - The site might return HTTP 418 as a joke (e.g. [https://coneapp.io](https://coneapp.io/))
     - (I’ve corrected this one and now count 418 as a live response, only want to mention it because of its humorous and surprising nature.)
 
