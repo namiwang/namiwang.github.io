@@ -50,6 +50,7 @@ There are 120,396 valid Show HN stories. The [first one](https://news.ycombinato
 ### Top Domains Used
 
 {% assign data = site.data.thn.2306.show-hn-stories-group-by-domain %}
+
 <table>
   {% for row in data %}
     {% if forloop.first %}
@@ -59,9 +60,11 @@ There are 120,396 valid Show HN stories. The [first one](https://news.ycombinato
         <th>{{ headers[0] }}</th>
       {% endfor %}
     </tr>
-    {% elsif forloop.index0 <= 20 %}
+    {% endif %}
+
+    {% if forloop.index0 <= 20 %}
     <tr>
-      <td>{{ forloop.index0 }}</td>
+      <td>{{ forloop.index }}</td>
       <td>{{ row.domain }}</td>
       <td>{{ row.count }}</td>
     </tr>
@@ -82,7 +85,7 @@ There are 120,396 valid Show HN stories. The [first one](https://news.ycombinato
       </tr>
       {% elsif forloop.index0 > 20 %}
       <tr>
-        <td>{{ forloop.index0 }}</td>
+        <td>{{ forloop.index }}</td>
         <td>{{ row.domain }}</td>
         <td>{{ row.count }}</td>
       </tr>
@@ -146,9 +149,11 @@ With this constraint applied, out of 64407 Show HN projects, 34585 (53.70%) surv
       <th>score</th>
       <th>submitted at</th>
     </tr>
-    {% elsif forloop.index0 <= 20 %}
+    {% endif %}
+
+    {% if forloop.index0 <= 20 %}
     <tr>
-      <td>{{ forloop.index0 }}</td>
+      <td>{{ forloop.index }}</td>
       <td>
         <a target="_blank" href="https://news.ycombinator.com/item?id={{row.id}}">{{ row.title }}</a>
       </td>
@@ -172,7 +177,7 @@ With this constraint applied, out of 64407 Show HN projects, 34585 (53.70%) surv
       </tr>
       {% elsif forloop.index0 > 20 %}
       <tr>
-        <td>{{ forloop.index0 }}</td>
+        <td>{{ forloop.index }}</td>
         <td>
           <a target="_blank" href="https://news.ycombinator.com/item?id={{row.id}}">{{ row.title }}</a>
         </td>
