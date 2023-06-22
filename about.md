@@ -10,7 +10,7 @@ I participated in competitive programming as a teenager (NOI '08, '09 in China),
 
 I've been working on indie games, compilers, and regular full-stack developments.
 
-I also translate tech materials and write [short stories](https://weilu.community).
+I also translate tech materials and write [short stories](/tags/#story).
 
 # side-projects
 
@@ -99,9 +99,9 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 - I’m a co-translater of the simplified Chinese version of *MongoDB: The Definitive Guide* from *O'Reilly*
 
-## as a novelist
+<!-- ## as a novelist
 
-- I publish short stories at 圍爐（[weilu.community](https://weilu.community)）
+- I publish short stories at 圍爐（[weilu.community](https://weilu.community)） -->
 
 <!-- # communities
 

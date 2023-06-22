@@ -41,6 +41,7 @@ plugins:
 - jekyll-seo-tag
 - jekyll-paginate
 # - jekyll-image-size
+# - jekyll-archives
 
 comments:
   provider: "utterances"
@@ -87,3 +88,22 @@ defaults:
 # markdown: kramdown
 # kramdown:
 #   parse_block_html: true
+
+# https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md
+# NOTE not supported by github pages
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/#archive-settings
+# jekyll-archives:
+#   enabled: [tags]
+#   # layout: category
+#   permalinks:
+#     # year: '/:year/'
+#     # month: '/:year/:month/'
+#     # day: '/:year/:month/:day/'
+#     tag: '/tag/:name/'
+#     # category: '/category/:name/'
+#   layouts:
+#     tag: tag
+
+tag_archive:
+  type: liquid
+  path: /tags/
