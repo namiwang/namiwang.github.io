@@ -63,7 +63,7 @@ defaults:
       share: false
       related: true
       show_date: true
-      classes: wide
+      # classes: wide
 
 # Exclude from processing.
 # The following items will not be processed, by default.

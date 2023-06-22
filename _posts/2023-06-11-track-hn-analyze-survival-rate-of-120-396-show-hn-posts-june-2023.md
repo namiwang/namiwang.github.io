@@ -4,6 +4,7 @@ excerpt: 'Spoiler alert: many of the good projects didn''t survive'
 date: 2023-06-11 21:00:00 +0800'
 toc: true
 toc_sticky: true
+classes: wide
 ---
 
 Spoiler alert: many of the good projects didn't survive
