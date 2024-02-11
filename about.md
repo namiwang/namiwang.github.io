@@ -83,15 +83,17 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 # tiny projects
 
-- [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki.
 - [icons.land](https://icons.land): to search icons from different packs like font-awesome, ionicons, etc.
-- [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
+- [shiori raycast extension](https://www.raycast.com/namiwang/shiori): raycast extension for [shiori bookmark manager](https://github.com/go-shiori/shiori/).
 - [wiki flutter](https://github.com/namiwang/wiki-flutter): a wikipedia client in flutter
+- [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki.
+- [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
 
-# utility libs
+# packages/libraries
 
-- [actioncable_dart](https://github.com/namiwang/actioncable_dart): action cable websocket protocol ported to dart
-- [flutter_html_widget](https://github.com/namiwang/flutter_html_widget): parse HTML dom into flutter widgets
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" width="16" />[acts_as_reactable](https://github.com/public-reactions/acts_as_reactable) : emoji reactions support for rails
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" width="16" />[actioncable_dart](https://github.com/namiwang/actioncable_dart): action cable websocket protocol ported to dart
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" width="16" />[flutter_html_widget](https://github.com/namiwang/flutter_html_widget): parse HTML dom into flutter widgets
 
 # publications
 

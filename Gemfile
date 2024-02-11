@@ -15,6 +15,7 @@ group :jekyll_plugins do
   # gem 'jekyll-archives'
 
   gem 'jekyll-admin'
+  gem 'rackup'
 end
 
 gem "webrick", "~> 1.7"
