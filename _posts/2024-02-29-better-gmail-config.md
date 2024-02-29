@@ -7,11 +7,11 @@ classes: wide
 
 > This post is based on my previous [thread](https://twitter.com/nami_m_wang/status/1759938276528656708), now further expanded with additional thoughts.
 
-## Gmail searching/filtering issues
+## why not using Gmail UI to manage
+
+I feel like Gmail hasn't improved the searching/filtering/labeling part in years. It's a poor experience in general, especially for advanced usages.
 
 ### confusing query builder
-
-I feel like Gmail hasn't improved the searching/filtering part in years. It's a poor experience in general, especially for advanced usages.
 
 For example, to filter emails by compound conditions, I must learn [a special syntax](https://support.google.com/mail/answer/7190?hl=en) and put the query in the input labeled "Has the words".
 
@@ -33,7 +33,7 @@ In comparison, here is a common general-purpose query builder component ([react-
 
 ### bad importing experiences
 
-Importing rules is just a disastrous experience.
+Importing filter rules is just a disastrous experience.
 
 - The embarrassing design feels like it's from the 90s: users have to click 3 times for "import rules", "choose file", and "open file".
 - The modal auto closes itself after finishing, no matter succeeded or failed.
