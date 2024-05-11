@@ -107,3 +107,6 @@ defaults:
 tag_archive:
   type: liquid
   path: /tags/
+
+analytics:
+  provider: custom
