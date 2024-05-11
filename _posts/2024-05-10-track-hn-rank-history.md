@@ -1,11 +1,11 @@
 ---
 layout: single
-title: 'Track HN: Rank History and My Nocode Experiences'
+title: 'Track HN: Score and Rank History (plus My Nocode Experiences)'
 date: '2024-05-10 19:00:00 +0800'
 classes: wide
 ---
 
-I've been working on the project [Track HN](https://www.track-hacker-news.com) for a while now. The HN dataset is perfect to play with. It's a vivid engaging forum about interesting topics from a community of hackers, with a ranking algorithm plus human interference. It's not so large as to require impossible resources for me to process. It just has so much potential.
+I've been working on the project [Track HN](https://www.track-hacker-news.com) for a while now. The HN dataset is perfect to play with. It's a vivid engaging forum about interesting topics from a community of hackers, with a ranking mechanism provided by algorithm plus human interference. It's not so large as to require impossible resources for me to process. It just has so much potential.
 
 I'm constantly expanding my dataset by tracking more data. Last year, I started to detect and track availability of links. Since April, I've begun to track score and rank history of all stories.
 
