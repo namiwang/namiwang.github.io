@@ -12,7 +12,24 @@ I've been working on indie games, compilers, and regular full-stack developments
 
 I also translate tech materials and write [short stories](/tags/#story).
 
-# side-projects
+# projects
+
+## Track HN
+
+<details markdown=1>
+<summary markdown="span">Data tracking and analysis project for Hacker News</summary>
+
+<br>
+[Track HN](https://track-hacker-news.com) is a project to track, archive, visualize and analyze data from Hacker News.
+
+The project consists of web tracker, database, server-less functions, no-code dashboards, browser extension, and twitter bot.
+
+Posts/Reports:
+
+- [Track HN: analyze the survival rate of 120,396 Show HN stories (June 2023)](https://nami.land/2023/06/11/track-hn-analyze-survival-rate-of-120-396-show-hn-posts-june-2023.html)
+- [Track HN: Score and Rank History (plus My Nocode Experiences)](https://nami.land/2024/05/10/track-hn-rank-history.html)
+
+</details>
 
 ## fiber note
 
@@ -27,7 +44,22 @@ I also translate tech materials and write [short stories](/tags/#story).
 
 I'm working on a series of dev diaries around the building of fiber-note:
 
-- [part #1](https://namiwang.github.io/2020/11/12/building-a-roam-like-networked-heavily-customized-realtime-editor-part-1.html)
+- [part #1](https://nami.land/2020/11/12/building-a-roam-like-networked-heavily-customized-realtime-editor-part-1.html)
+
+</details>
+
+## ruby on rust
+
+<!-- https://github.com/gettalong/kramdown/issues/155 -->
+<details markdown=1>
+<summary markdown="span">An implementation of ruby in rust</summary>
+
+<br>
+[ruby-on-rust](https://github.com/ruby-on-rust/ruby-on-rust) is an implementation of <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" width="16" />ruby language in pure <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" width="16" />rust, consists of (barely working) lexer and parser, and a WIP interpreter.
+
+I started this project as a way to learn rust. Eventually, I've learned more than that, including lexer & parser, `ragel`, and a lot of ruby's hidden magic.
+
+Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapted some rules from `parser` and ported from ragel-6 to ragel-7. For parser, I use `syntax-cli` as the parser generator.
 
 </details>
 
@@ -47,22 +79,6 @@ I composed scrappers to fetch and parse the occurrences of pop culture reference
 I built my own knowledge base to cross-reference sources like wikidata, google kg, and wolfram alpha. I implemented a customized editor for user to create new references between works.
 
 The next step will be UGC workflow (I’m considering a git-based one), editing history and data visualization.
-</details>
-
-## ruby on rust
-
-<!-- https://github.com/gettalong/kramdown/issues/155 -->
-<details markdown=1>
-<summary markdown="span">An implementation of ruby in rust</summary>
-
-[https://github.com/ruby-on-rust/ruby-on-rust](https://github.com/ruby-on-rust/ruby-on-rust)
-
-An implementation of ruby in pure rust, consists of (barely working) lexer and parser, and a no-go interpreter.
-
-I started this project as a way to learn rust. Eventually, I've learned more than that, including lexer & parser, `ragel`, and a lot of ruby's hidden magic.
-
-Lots of the grammar rules and AST conventions are ripped from the `parser` gem. For lexer, I adapted some rules from `parser` and ported from ragel-6 to ragel-7. For parser, I use `syntax-cli` as the parser generator.
-
 </details>
 
 ## project yoru
