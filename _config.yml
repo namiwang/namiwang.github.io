@@ -21,6 +21,7 @@
 title: nami.land
 # subtitle: 西交民巷 50 号
 # subtitle: Nami's blog
+url: "https://nami.land"
 
 # Build settings
 
@@ -42,6 +43,7 @@ plugins:
 - jekyll-paginate
 # - jekyll-image-size
 # - jekyll-archives
+- jekyll-sitemap
 
 comments:
   provider: "utterances"
