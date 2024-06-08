@@ -100,14 +100,13 @@ The next step will be UGC workflow (I’m considering a git-based one), editing 
 # tiny projects
 
 - [icons.land](https://icons.land): to search icons from different packs like font-awesome, ionicons, etc.
-- [shiori raycast extension](https://www.raycast.com/namiwang/shiori): raycast extension for [shiori bookmark manager](https://github.com/go-shiori/shiori/).
 - [wiki flutter](https://github.com/namiwang/wiki-flutter): a wikipedia client in flutter
 - [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki.
 - [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
 
 # packages/libraries/utilities
 
-- <img src="/assets/images/raycast_logo.png" width="16" />[raycast shiori extension](https://www.raycast.com/namiwang/shiori) : Raycast extension for Shiori
+- <img src="/assets/images/raycast_logo.png" width="16" />[raycast shiori extension](https://www.raycast.com/namiwang/shiori) : Raycast extension for [shiori bookmark manager](https://github.com/go-shiori/shiori/).
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" width="16" />[acts_as_reactable](https://github.com/public-reactions/acts_as_reactable) : emoji reactions support for rails
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" width="16" />[actioncable_dart](https://github.com/namiwang/actioncable_dart): action cable websocket protocol ported to dart
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" width="16" />[flutter_html_widget](https://github.com/namiwang/flutter_html_widget): parse HTML dom into flutter widgets
