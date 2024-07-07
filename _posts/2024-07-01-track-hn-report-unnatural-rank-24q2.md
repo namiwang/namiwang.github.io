@@ -7,16 +7,26 @@ classes: wide
 
 ## About this Report
 
-TBD part of the [Track HN](https://www.track-hn.com) project.
+This post is part of the [Track HN](https://www.track-hacker-news.com) project. It tracks the activity of stories on Hacker News that show unnatural behavior.
+
+### Criteria
+
+- submitted between April 1, 2024 and July 1, 2024
+- more than 
 
 ### Data Source
 
-### Criteria
+The data is collected from the [Hacker News API](TBD)
 
 ## Stories with Unnatural Activity
 
 {% for s in site.data.thn.2407.report.stories %}
-  <h3>{{ s.title }}</h3>
+  <h3>
+    <a href="https://dash.track-hacker-news.com/stories/{{ s.id }}">
+      {{ s.id }} - {{ s.title }}
+    </a>
+  </h3>
+
   <!-- TODO responsive -->
   <!-- https://echarts.apache.org/handbook/en/concepts/chart-size/ -->
   <div style="width:100%; min-width:480px; height:400px;">
@@ -26,7 +36,7 @@ TBD part of the [Track HN](https://www.track-hn.com) project.
 
 <!--  -->
 
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 
 <script>
   const renderChart = async (story) => {
