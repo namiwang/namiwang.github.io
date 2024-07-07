@@ -117,7 +117,7 @@ The next step will be UGC workflow (I’m considering a git-based one), editing 
 
 - [icons.land](https://icons.land): to search icons from different packs like font-awesome, ionicons, etc.
 - [wiki flutter](https://github.com/namiwang/wiki-flutter): a wikipedia client in flutter
-- [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki.
+<!-- - [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki. -->
 - [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
 
 # packages/libraries/utilities
