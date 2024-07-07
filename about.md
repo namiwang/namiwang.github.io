@@ -31,6 +31,18 @@ Posts/Reports:
 
 </details>
 
+## WeWord
+
+<details markdown=1>
+<summary markdown="span">AI-generated dictionary, thesaurus and crosswords</summary>
+
+<br>
+[WeWord](https://weword.io) is an AI-generated dictionary, thesaurus and crossword puzzles.
+
+It helps to see how the AI sees our world by letting it explain our language.
+
+</details>
+
 ## fiber note
 
 <details markdown=1>
