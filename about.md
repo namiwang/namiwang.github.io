@@ -41,6 +41,10 @@ Posts/Reports:
 
 It helps to see how the AI sees our world by letting it explain our language.
 
+<a href="https://weword.io" target="_blank">
+  <img src="/assets/images/weword.io_words_serendipity.png" width="480" alt="weword.io">
+</a>
+
 </details>
 
 ## fiber note
