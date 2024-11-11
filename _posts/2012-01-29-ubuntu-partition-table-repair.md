@@ -1,7 +1,7 @@
 ---
 layout: single
-title: 为什么不应该贸然升级和一次分区表修复
-excerpt: don't feed dogfood to your only computer (with a dual boot system)
+title: log fixing ubuntu partition table
+excerpt: 为什么不应该贸然升级和一次分区表修复
 date: 2011-05-29 22:43
 ---
 

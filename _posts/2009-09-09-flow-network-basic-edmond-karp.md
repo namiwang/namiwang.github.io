@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 网络流 —— Edmond-Karp
+title: Edmond-Karp algorithm for maximum flow
 excerpt: 数字时代的拾荒人面对有记忆的互联网，找到的可能是惊喜，也可能是折磨。
 date: 2009-09-09 09:09
 ---
