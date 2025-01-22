@@ -4,11 +4,9 @@ title: About & Projects
 permalink: /about/
 ---
 
-I write different kinds of code.
+Full-stack developer at @microsoft by day, indie creator by night, and a cool dad always.
 
-I participated in competitive programming as a teenager (NOI '08, '09 in China), and now I work as a full-stack developer for @microsoft.
-
-I've been working on indie games, compilers, and regular full-stack developments.
+I started in competitive programming (NOI '08, '09 in China), where I learned to enjoy coding and building cool stuff. Now, I spend my time building apps, games, and compilers.
 
 I also translate tech materials and write [short stories](/tags/#story).
 
@@ -115,7 +113,7 @@ The next step will be UGC workflow (I’m considering a git-based one), editing 
 
 # tiny projects
 
-- [icons.land](https://icons.land): to search icons from different packs like font-awesome, ionicons, etc.
+- [rails.style](https://rails.style): a curated resource hub for Rails developers
 - [wiki flutter](https://github.com/namiwang/wiki-flutter): a wikipedia client in flutter
 <!-- - [1-toolbox.com](https://1-toolbox.com): a public toolbox wiki. -->
 - [streaming guide](https://streaming-guide.github.io): help to decide which streaming service (nf, hulu, disney+) should you subscribe to
