@@ -77,7 +77,17 @@ Lots of the grammar rules and AST conventions are ripped from the `parser` gem. 
 
 </details>
 
-## references.wiki
+## charts.land
+
+<details markdown=1>
+<summary markdown="span">charts rendering service</summary>
+
+<br>
+[charts.land](https://charts.land) is a chart image and animation rendering service. The ultimate goal is to provide an unified API that can render any chart from different libraries (e.g. `d3`, `plotly`, `echarts`, `chart.js`, `vega`, etc.).
+
+</details>
+
+## references.wiki (discontinued)
 
 <details markdown=1>
 <summary markdown="span">tracking pop culture references</summary>
