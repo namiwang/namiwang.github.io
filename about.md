@@ -15,6 +15,20 @@ I also translate tech materials and write [short stories](/tags/#story).
 ## Track HN
 
 <details markdown=1>
+<summary markdown="span">pick.tools - AI-maintained catalog of softwares & services</summary>
+
+<br>
+[pick.tools](https://pick.tools) is an fully AI-maintained catalog of softwares and services. The agents continuously discover, analyze, and categorize tools from different sources, including the their stack, reviews, and testimonies.
+
+<a href="https://pick.tools" target="_blank">
+  <img src="/assets/images/pick.tools.1.png" width="480" alt="weword.io">
+</a>
+
+</details>
+
+## Track HN
+
+<details markdown=1>
 <summary markdown="span">Data tracking and analysis project for Hacker News</summary>
 
 <br>
