@@ -12,7 +12,7 @@ I also translate tech materials and write [short stories](/tags/#story).
 
 # projects
 
-## Track HN
+## pick.tools
 
 <details markdown=1>
 <summary markdown="span">pick.tools - AI-maintained catalog of softwares & services</summary>
