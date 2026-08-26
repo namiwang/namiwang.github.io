@@ -4,7 +4,7 @@ title: About & Projects
 permalink: /about/
 ---
 
-A husband, dad, cat owner, and developer. Working on AI Infra at [Moonshot AI](https://www.moonshot.ai/), and previously worked at Microsoft.
+A husband, dad, cat owner, and developer. Working on AI Infra at [Moonshot AI](https://www.moonshot.ai/); previously at Microsoft.
 
 I also translate tech materials and write [short stories](/tags/#story).
 
