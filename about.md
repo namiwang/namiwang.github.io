@@ -4,9 +4,7 @@ title: About & Projects
 permalink: /about/
 ---
 
-Full-stack developer at @microsoft by day, indie creator by night, and a cool dad always.
-
-I started in competitive programming (NOI '08, '09 in China), where I learned to enjoy coding and building cool stuff. Now, I spend my time building apps, games, and compilers.
+A husband, dad, cat owner, and developer. Working on AI Infra at [Moonshot AI](https://www.moonshot.ai/), and previously worked at Microsoft.
 
 I also translate tech materials and write [short stories](/tags/#story).
 
