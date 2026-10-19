@@ -23,13 +23,13 @@ title: nami.land
 # subtitle: Nami's blog
 url: "https://nami.land"
 
+# default author for pages showing the author profile (see _data/authors.yaml)
+author: Nami W
+
 # Build settings
 
-# for local dev
-# theme: minimal-mistakes-jekyll
-
-# for prod
-remote_theme: mmistakes/minimal-mistakes
+# version pinned in Gemfile
+theme: minimal-mistakes-jekyll
 
 minimal_mistakes_skin: dirt
 
@@ -37,7 +37,6 @@ repository: "namiwang/namiwang.github.io"
 
 plugins:
 - jekyll-include-cache
-- jekyll-remote-theme
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-paginate

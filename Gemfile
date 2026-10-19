@@ -1,14 +1,13 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2"
-gem 'minimal-mistakes-jekyll', "4.26.1"
+gem "jekyll", "~> 4.4"
+gem 'minimal-mistakes-jekyll', "4.28.1"
 
 group :jekyll_plugins do
   # gem "github-pages"
 
   gem 'jekyll-include-cache'
-  gem "jekyll-remote-theme"
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed", "~> 0.18"
   gem "jekyll-paginate"
   gem 'jekyll-seo-tag'
   # gem 'jekyll-image-size'
@@ -18,7 +17,7 @@ group :jekyll_plugins do
   gem 'rackup'
 end
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.9"
 
 gem "logger"
 gem "csv"
