@@ -1,3 +1,13 @@
 ---
 layout: home
 ---
+{% assign author = site.data.authors[site.author] %}
+<div class="home-intro">
+  <strong>{{ author.name }}</strong>
+  <span class="home-intro__links">
+    {% for link in author.links %}
+      <a href="{{ link.url }}" title="{{ link.label }}" aria-label="{{ link.label }}"><i class="{{ link.icon }}" aria-hidden="true"></i></a>
+    {% endfor %}
+  </span>
+  <div class="home-intro__bio">{{ author.bio | markdownify | split: "</p>" | first }}</p></div>
+</div>

@@ -1,25 +1,22 @@
 Nami W:
   name: Nami W
+  # the first paragraph doubles as the intro on the home page
   bio: |
-    Competitive programmer then, full-stack developer now.
+    Husband, dad, cat owner. Working on Agent Infra at [Moonshot AI](https://www.moonshot.ai/); previously at Microsoft.
 
-    Working on webdev, indie games, and compilers, with ruby, typescript, and rust. Also translate and write.
-
-    🏃 Morning Runner<br>
-    💼 Daytime Engineer @Microsoft<br>
-    🌙 Evening Indie Developer
+    I also translate tech materials and write [short stories](/tags/#story).
 
   # avatar: "/assets/images/bio-photo-2.jpg"
   links:
     - label: About & projects
       icon: "fas fa-fw fa-link"
-      url: https://nami.land/about
+      url: /about/
     - label: "me@nami.land"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:nami.m.wang@gmail.com"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:me@nami.land"
     - label: "@namiwang"
-      icon: "fab fa-fw fa-github-square"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/namiwang"
     - label: "@nami_m_wang"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/nami_m_wang"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/nami_m_wang"

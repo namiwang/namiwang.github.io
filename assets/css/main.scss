@@ -1,0 +1,61 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* home: name and links on one line, the first bio paragraph below */
+.home-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $sans-serif;
+
+  a {
+    color: $muted-text-color;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
+.home-intro__links {
+  display: flex;
+  gap: 0.75em;
+}
+
+.home-intro__bio {
+  flex-basis: 100%;
+  margin-top: 0.25em;
+  color: $muted-text-color;
+  font-size: $type-size-6;
+  text-wrap: pretty;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* the theme strips link styling inside the author profile; bring it back for the bio */
+.author__bio a {
+  text-decoration: underline;
+  text-decoration-color: $muted-text-color;
+  text-underline-offset: 0.2em;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+/* on small screens the profile sits above each post; keep it to the name and "Follow" */
+@include breakpoint(max-width ($large - 1px)) {
+  .sidebar .author__bio {
+    display: none;
+  }
+}
